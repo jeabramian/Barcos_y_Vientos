@@ -52,38 +52,6 @@ nav{
     font-weight: bold;
 }
 
-a{
-    color: blanchedalmond;
-    background-color: rgb(49, 49, 236);
-    text-decoration: none;
-    font-size: 9 em;
-    font-family: 'Rubik', cursive;
-    font-weight: bold;
-    padding: .5em;
-    border-radius: 1em;
-    margin-top: 6px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-    margin-right: 0px;
-
-}
-
-/*
-::a{
-  color: none;
-    background-color: none;
-    text-decoration: none;
-    font-size: 9 em;
-    font-family: 'Rubik', cursive;
-    font-weight: bold;
-    padding: .5em;
-    border-radius: 1em;
-    margin-top: 6px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-    margin-right: 0px;
-
-}*/
 div{
     display: flex;
     width:100%;
@@ -91,9 +59,9 @@ div{
 
 section{
     z-index: 2;
-    /*display: flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;*/
+    flex-wrap: wrap;
     background-color: beige;
     height: 100%;
     width: 100%;
@@ -103,27 +71,6 @@ section{
     font-size: .8rem;
     
 }
-
-aside{
-    z-index: 1;
-    background-color: beige;
-    float: left;
-    position: fixed; 
-    overflow-y: auto;
-    top: 20%;
-    height: 40%;
-    width: 20%;
-    margin-left: 1em;
-    padding: 1em;
-    border: 2px solid black;
-    color: black;
-    text-align: justify;
-    font-family: 'Hurricane', cursive;
-    font-weight: bold;
-    font-size: 1.2em;
-        
-}
-
 
 footer{
     height:100px ;
@@ -147,22 +94,6 @@ h1,h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding: 10px;
-
-}
-
-.animate__animated.animate__swing {
-  --animate-duration: 6s;
-}
-h6{
-    font-size: 1.1em;
-    font-family: 'Arial Narrow';
-    font-weight: bold;
-    
-}
-
-.mySpan {
-    width: 100%;
-    padding-top: 0em;
 }
 
 .fa-brands {
@@ -177,31 +108,10 @@ p{
     font-size: 1em;
 }
 
-.grid-container {
-    display: grid;
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
-    grid-template-columns: auto auto ;
-    background-color: #2196F3;
-    padding: 2px;
-    
-  }
-  
-  .grid-item {
-    background-color: rgba(20, 19, 19, 0.8);
-    border: 1px solid rgba(189, 175, 175, 0.8);
-    padding: 5px;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    color: blanchedalmond;
-  }
-
-  
   .grid-container2 {
     display: grid;
     grid-template-columns: auto auto auto auto ; /* repeat(12,2fr);/*12 columnas de 1fr(una fraccion) son del mismo tamaño*/
-    grid-template-rows: repeat(8,50px);
+    grid-template-rows: repeat(6,50px);
     /* grid-template-rows: 100px 150px 300px;*//*Valor para la 1 columna 100px, la 2 150px y la 3 200px*/
     
     gap: 1px 1px;/*espacio entre columnas y filas*/
@@ -255,6 +165,7 @@ p{
     align-items: center;
     color: blanchedalmond;
   }
+
   
   form{
     display: block;
@@ -281,22 +192,6 @@ p{
   input[type=email] {
     width: 300px;
     min-height: 2em;
-    border: 2px solid red;
-    border-radius: 4px;
-  }
-
-  input[type=reset] {
-    width: 300px;
-    min-height: 2em;
-    font-size: .8em;
-    border: 2px solid red;
-    border-radius: 4px;
-  }
-
-  input[type=submit] {
-    width: 300px;
-    min-height: 2em;
-    font-size: .8em;
     border: 2px solid red;
     border-radius: 4px;
   }
@@ -370,21 +265,7 @@ p{
   transform: rotate(45deg);
 }
 
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-}
 
-.map-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-  padding: 4em;
-}
 
 @media all and (max-width: 800px) {
     .navigation {

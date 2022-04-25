@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="Icons/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/miestilo2.css">
+
+    <script src="https://kit.fontawesome.com/3a3802f5e3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--animate-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <title> BARCOS Y VIENTOS </title>
+
+</head>
+<body>
+       
+    <header>
+            <nav>
+               
+                <p class="image1"><img src="Images/LogoVelero.jpg" alt="Logo" width="40" height="40"style="border: 0px solid #000;" ></p>
+                <p class="Titulo">BARCOS Y VIENTOS </p>
+                <div class="menu">
+                    <a href="index2.html">Home</a>              <!--OJO, limpiar y volver a poner index.html-->
+                    <a href="Veleros.html">Tipos de veleros</a>
+                    <a href="Vientos.html">Vientos</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </nav>
+        
+       
+    </header>
+
+    <Section>
+        <div><H1 class="animate__animated animate__swing">CONTACTO Y OTRAS INFORMACIONES</H1>
+        <br><br></div>
+        
+    
+    <form method="post" action="mailto:contact@yourdomain.com" enctype="text/plain">
+
+        <div class="grid-container2">
+          
+            <div class="grid-item-text"> Nombre:</div>
+            <div class="grid-item-form">  <input type="text" name="nombre" placeholder="Por ej: John Smith" size="40" maxlength="100"/></div>
+            <div class="grid-item-text2"> Interés: </div>
+            <div class="grid-item-form2"> 
+                <label class="mycheckboxes">Pasear en velero 
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span></label> </div>
+
+
+            <div class="grid-item-text"> Apellido:</div>
+            <div class="grid-item-form">  <input type="text" name="apellido" placeholder="Por ej: John Smith" size="40" maxlength="100"/></div>
+            <div class="grid-item-text2"> </div>
+            <div class="grid-item-form2">   
+                <label class="mycheckboxes">Competir en Regatas
+                <input type="checkbox">
+                <span class="checkmark"></span></label></div>
+
+            <div class="grid-item-text"> Edad:</div>
+            <div class="grid-item-form">  <input type="number" min="1" placeholder="20"  /></div>
+            <div class="grid-item-text2">  </div>
+            <div class="grid-item-form2"> 
+                <label class="mycheckboxes">Hacer viajes largos (cruceros)
+                    <input type="checkbox">
+                    <span class="checkmark"></span></label></div>
+                
+            <div class="grid-item-text"> Email:</div>
+            <div class="grid-item-form"> <input type="email" placeholder="Email Address" required title="Formato Email: ejemplo@dominio.com" /></div>
+            <div class="grid-item-text2">  </div>
+            <div class="grid-item-form2"> 
+                <label class="mycheckboxes">Meteorología
+                <input type="checkbox">
+                <span class="checkmark"></span></label></div>
+            
+            <div class="grid-item-text"> Teléfono:</div>
+            <div class="grid-item-form"> <input type="text" name="telefono" placeholder="Por ej: 011-5555-3515" size="40" maxlength="100"
+                required title="Formato teléfono: XXX-XXXX-XXXX"/></div>
+            <div class="grid-item-text2">  </div>
+            <div class="grid-item-form2"> 
+                <label class="mycheckboxes">Navegación nocturna
+                <input type="checkbox">
+                <span class="checkmark"></span></label></div>
+
+            <div class="grid-item-text"> </div>
+            <div class="grid-item-form"> </div>
+            <div class="grid-item-text2">  </div>
+            <div class="grid-item-form2"> 
+                <label class="mycheckboxes">Planear navegación
+                <input type="checkbox">
+                <span class="checkmark"></span></label></div>
+    
+            <div class="grid-item-text"> </div>
+            <div class="grid-item-form"> </div>
+            <div class="grid-item-text2">  </div>
+            <div class="grid-item-form2"> 
+                    <input type="submit" value="Enviar el formulario"></div>
+            <div class="grid-item-text"> </div>
+            <div class="grid-item-form"> </div>
+            <div class="grid-item-text2">  </div>
+            <div class="grid-item-form2"> 
+                    <input type="reset"></div>
+    
+            
+        </div>
+    </form>
+</Section>
+
+<Section>
+    <div><H1 class="animate__animated animate__swing">DONDE IR A AVERIGUAR Y APRENDER</H1>
+    <br><br></div>
+
+    <div class="map-responsive">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.799845905401!2d-58.50934058447858!3d-34.45722838049768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1d4c1fbe6e7%3A0x65725c0de9a989dc!2sClub%20N%C3%A1utico%20Buchardo!5e0!3m2!1ses-419!2sar!4v1650821533459!5m2!1ses-419!2sar" 
+        width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</Section>
+
+
+</body>
+
+<footer>
+    
+    <span class="mySpan"><h5>Desarrollado para el curso Codo a Codo "Full Stack" Comisión 2082</h5>
+    <p>por Jorge E. Abramian - jeabramian@gmail.com</p>
+    
+    <p>Todos los derechos reservados</p></span>
+    
+   <!-- <div class="menu"> </div> --> 
+    
+    <a href="https://www.linkedin.com/in/jorge-e-abramian-0b241313/" style="background-color:darkseagreen" >
+   <i class="fa-brands fa-linkedin fa-xl" ></i> 
+    </a>
+   
+
+</footer>
+
+</html>
