@@ -1,15 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Rubik';
- /*   width: 100%;*/
-}
-
-header{
-    background-color: rgb(17, 5, 66);
-    border: 1px;
-    height:50px ;
+    font-family: 'Rubik', sans-serif;
 }
 
 body{
@@ -19,81 +11,81 @@ body{
     text-align: center;
 }
 
-nav{
-    display: flex;
+header{
+    display : flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
-    align-content: normal;    
-    align-items: center;
-    font-family: 'Rubik', cursive;
-    font-weight: bold;
+    align-items:center;
+    background-color: rgb(17, 5, 66);
+    border: 1px;
+    height:50px ;
 }
 
-.menu{
-    width: 87%;
-    justify-content: flex-end;
-
+p{
+    font-family: 'Arial Narrow';
+    font-size: 1em;
 }
+
 .image1{
     
     padding-top: .4em;
     padding-right: .4em;
 }
 
-.Titulo{
-    color: blanchedalmond;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-family: 'Rubik', cursive;
-    font-weight: bold;
+.Titulo{                  /* La caja del Titulo es un ítem del contenedor header, pero las palabras no lo son */
+ 
+  color: blanchedalmond;
+  text-align: center;
+  padding-left: .1em;
+  padding-right: .3em;
+  /*padding-top: .1em;*/
+ font-family: 'Rubik', sans-serif;
+  font-weight: bold;
 }
 
-a{
-    color: blanchedalmond;
-    background-color: rgb(49, 49, 236);
-    text-decoration: none;
-    font-size: 9 em;
-    font-family: 'Rubik', cursive;
-    font-weight: bold;
-    padding: .5em;
-    border-radius: 1em;
-    margin-top: 6px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-    margin-right: 0px;
-
-}
-
-/*
-::a{
-  color: none;
-    background-color: none;
-    text-decoration: none;
-    font-size: 9 em;
-    font-family: 'Rubik', cursive;
-    font-weight: bold;
-    padding: .5em;
-    border-radius: 1em;
-    margin-top: 6px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-    margin-right: 0px;
-
-}*/
 div{
     display: flex;
     width:100%;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    width: 50%;
+    height: 50px;
+    justify-content: flex-end;
+    /*align-content:normal ;    */
+    align-items: center;
+    /*font-family: 'Rubik', cursive;*/
+    font-weight: bold;
+}
+
+.menu{
+    
+    width: 100%;
+    justify-content: flex-end;
+
+}
+
+/* CON MEDIA QUERIES AL FINAL PUEDO CAMBIAR LA RESOLUCIÓN DE LOS .MENU A*/
+
+.menu a{
+  color: blanchedalmond;
+  background-color: rgb(49, 49, 236);
+  text-decoration: none;
+  font-size: 1.6vmin;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  padding: .8vmin;
+  border-radius: 0.9vmin;
+  margin: 3px 5px 3px 0;
+
+}
+
 section{
     z-index: 2;
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;*/
     background-color: beige;
     height: 100%;
     width: 100%;
@@ -104,29 +96,74 @@ section{
     
 }
 
-aside{
-    z-index: 1;
-    background-color: beige;
-    float: left;
-    position: fixed; 
-    overflow-y: auto;
-    top: 20%;
-    height: 40%;
-    width: 20%;
-    margin-left: 1em;
-    padding: 1em;
-    border: 2px solid black;
-    color: black;
-    text-align: justify;
-    font-family: 'Hurricane', cursive;
-    font-weight: bold;
-    font-size: 1.2em;
-        
+/* CON MEDIA QUERIES AL FINAL PUEDO CAMBIAR LA RESOLUCIÓN DE LOS MYASIDE*/
+.myAside{
+  z-index: 1;
+  background-color: beige;
+  float: left;
+  position: fixed; 
+  overflow-y: auto;
+  border: 2px solid black;
+  text-align: justify;
+  font-family: 'Hurricane', cursive;
+  color: black;
+  margin-left: 1vh;
+  padding: 1vh 1vh;
+  top: 10vh;
+  width: 25vw;
+  
 }
 
 
-footer{
-    height:100px ;
+/* DEFINICIONES DE GRID QUE SE USA EN VELEROS Y VIENTOS */ 
+/* CON MEDIA QUERIES AL FINAL PUEDO CAMBIAR LA RESOLUCIÓN DE LOS GRID ITEMS*/
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  grid-template-columns: auto auto ;
+  background-color: #2196F3;
+  padding: 2px;
+  
+}
+
+.grid-item {
+  background-color: rgba(20, 19, 19, 0.8);
+  border: 1px solid rgba(189, 175, 175, 0.8);
+  padding: 5px;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  color: blanchedalmond;
+}
+
+
+.grid-item-text {
+    grid-column: 1;
+    min-width:0;
+    background-color: rgba(20, 19, 19, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    /*justify-content: center;*/
+    align-items: center;
+    color: blanchedalmond;
+  }
+
+  .grid-item-form {
+    grid-column: 2;
+    min-width:0;
+    background-color: rgba(20, 19, 19, 0.8);
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    font-size: 20px;
+    justify-items: left;
+    align-items: center;
+    color: blanchedalmond;
+  }
+  footer{
     padding-top: .7em;
     padding-bottom: .7em;
     width: 100%;
@@ -150,9 +187,8 @@ h1,h2{
 
 }
 
-.animate__animated.animate__swing {
-  --animate-duration: 6s;
-}
+/*.animate__animated.animate__swing {--animate-duration: 6s;}*/
+
 h6{
     font-size: 1.1em;
     font-family: 'Arial Narrow';
@@ -172,74 +208,31 @@ h6{
     margin-bottom: 0em;
 }
 
-p{
-    font-family: 'Arial Narrow';
-    font-size: 1em;
+.box1{
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
 }
-
-.grid-container {
-    display: grid;
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
-    grid-template-columns: auto auto ;
-    background-color: #2196F3;
-    padding: 2px;
-    
-  }
-  
-  .grid-item {
-    background-color: rgba(20, 19, 19, 0.8);
-    border: 1px solid rgba(189, 175, 175, 0.8);
-    padding: 5px;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    color: blanchedalmond;
-  }
-
-  
   .grid-container2 {
     display: grid;
-    grid-template-columns: auto auto auto auto ; /* repeat(12,2fr);/*12 columnas de 1fr(una fraccion) son del mismo tamaño*/
+    width:100%;
+    grid-template-columns: auto auto ; /* repeat(12,2fr); 12 columnas de 1fr(una fraccion) son del mismo tamaño*/
+   
     grid-template-rows: repeat(8,50px);
-    /* grid-template-rows: 100px 150px 300px;*//*Valor para la 1 columna 100px, la 2 150px y la 3 200px*/
-    
     gap: 1px 1px;/*espacio entre columnas y filas*/
-    
-      /*grid-template-columns: 30% 70%; */
     background-color: rgba(20, 19, 19, 0.8);
     padding: 0  px;
 
   }
 
-  .grid-item-text {
-    grid-column: 1;
-    background-color: rgba(20, 19, 19, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    /*justify-content: center;*/
-    align-items: center;
-    color: blanchedalmond;
-  }
-
-  .grid-item-form {
-    grid-column: 2;
-    background-color: rgba(20, 19, 19, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 2px;
-    font-size: 20px;
-    justify-items: left;
-    align-items: center;
-    color: blanchedalmond;
-  }
-
   .grid-item-text2 {
-    grid-column: 3;
+    grid-column: 1;
+    min-width:0;
     background-color: rgba(20, 19, 19, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 5px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     align-items: center;
@@ -247,10 +240,11 @@ p{
   }
  
   .grid-item-form2 {
-    grid-column-start: 4;
+    grid-column-start: 2;
+    min-width:0;
     background-color: rgba(20, 19, 19, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 2px;
+    padding: 0px;
     font-size: 20px;
     align-items: center;
     color: blanchedalmond;
@@ -258,35 +252,33 @@ p{
   
   form{
     display: block;
-    
     margin-top: 1em;
-    margin-block-end: 1em;
     border: rgba(45, 153, 117, 0.8);
-    border-width: 2px;
+    border-width: 0px;
   }
  
   input[type=text] {
-    width: 300px;
+    width: 250px;
     min-height: 2em;
     border: 2px solid red;
     border-radius: 4px;
   }
 
   input[type=number] {
-    width: 300px;
+    width: 250px;
     min-height: 2em;
     border: 2px solid red;
     border-radius: 4px;
   }
   input[type=email] {
-    width: 300px;
+    width: 250px;
     min-height: 2em;
     border: 2px solid red;
     border-radius: 4px;
   }
 
   input[type=reset] {
-    width: 300px;
+    width: 220px;
     min-height: 2em;
     font-size: .8em;
     border: 2px solid red;
@@ -294,7 +286,7 @@ p{
   }
 
   input[type=submit] {
-    width: 300px;
+    width: 220px;
     min-height: 2em;
     font-size: .8em;
     border: 2px solid red;
@@ -305,7 +297,7 @@ p{
 .mycheckboxes {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 30px;
   margin-bottom: 12px;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
@@ -358,7 +350,7 @@ p{
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.mycheckboxes .checkmark:after {                                          
   left: 9px;
   top: 5px;
   width: 5px;
@@ -386,24 +378,297 @@ p{
   padding: 4em;
 }
 
-@media all and (max-width: 800px) {
-    .navigation {
-      justify-content: space-around;
-    }
+
+/* MEDIA QUERIES PARA CAMBIAR TAMAÑOS DE MENÚ Y DE ASIDE EN INDEX*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .myAside{
+  margin-left: 1vh;
+  padding: .5vh .5vh;
+  top: 55px;
+  height:35vh;
+  width: 35vw;
+  }
+
+.item1 {
+  font-size: 18px;
+  font-weight: bold;
+  }  
+.item2 {
+  font-size: 11px;
+  }  
+
+.menu a{
+  font-size: 2.4vmin;
+  padding: .5vmin;
+  border-radius: 0.9vmin;
+  margin: 3px 5px 3px 0;
   }
   
-  @media all and (max-width: 600px) {
-    .navigation {
-      flex-flow: column wrap;
-      padding: 0;
-    }
-    .navigation a { 
-      text-align: center; 
-      padding: 10px;
-      border-top: 1px solid rgba(255, 255, 255,0.3); 
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-    }
-    .navigation li:last-of-type a {
-      border-bottom: none;
-    }
+.grid-item {
+  padding: 2px;
+  font-size: 13px;
+}
+
+
+.grid-item-text {
+  grid-column: 1;
+  min-width:0;
+  background-color: rgba(20, 19, 19, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2px 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  /*justify-content: center;*/
+  align-items: center;
+  color: blanchedalmond;
+}
+
+.grid-item-form {
+  grid-column: 2;
+  min-width:0;
+  background-color: rgba(20, 19, 19, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2px;
+  font-size: 20px;
+  justify-items: left;
+  align-items: center;
+  color: blanchedalmond;
+}
+
+/* FORMULARIO PARA FORMATOS CHICOS */
+
+
+.box1{
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.grid-container2 {
+  display: grid;
+  width:100%;
+  grid-template-columns: 1fr  ; /* repeat(12,2fr); 12 columnas de 1fr(una fraccion) son del mismo tamaño*/
+  grid-template-rows: repeat(8,35px);
+  gap: 1px 1px;/*espacio entre columnas y filas*/
+  background-color: rgba(20, 19, 19, 0.8);
+  padding: 0  px;
+
+}
+
+.grid-item-text2 {
+  grid-column: 1fr;
+  min-width:0;
+  min-height: 0;
+  background-color: rgba(20, 19, 19, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  align-items: center;
+  color: blanchedalmond;
+}
+
+.grid-item-form2 {
+  grid-column: 1fr;
+  min-width:0;
+  min-height: 0;
+  background-color: rgba(20, 19, 19, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px;
+  font-size: 12px;
+  align-items: center;
+  color: blanchedalmond;
+}
+ input[type=text] {
+    width: 150px;
+    min-height: 2em;
+    border: 2px solid red;
+    border-radius: 4px;
   }
+
+  input[type=number] {
+    width: 150px;
+    min-height: 2em;
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+input[type=reset] {
+  width: 150px;
+  min-height: 2em;
+  font-size: 12px;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  width: 150px;
+  min-height: 2em;
+  font-size: 12px;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+/* Customize the label (the container) */
+.mycheckboxes {
+display: block;
+position: relative;
+padding-left: 30px;
+margin-bottom: 12px;
+cursor: pointer;
+font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.mycheckboxes input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 15px;
+width: 15px;
+background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.mycheckboxes:hover input ~ .checkmark {
+background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.mycheckboxes input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.mycheckboxes input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.mycheckboxes .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+
+
+}
+
+@media (max-width: 600px) and (orientation: landscape){
+
+.myAside{
+  margin-left: 1vh;
+  padding: .5vh .5vh;
+  top: 55px;
+  height:32vh;
+  width: 45vw;
+  }
+   
+.item1 {
+  font-size: 18px;
+  font-weight: bold;
+  }  
+.item2 {
+  font-size: 11px;
+  }  
+
+.menu a{
+  font-size: 2.4vmin;
+  padding: .5vmin;
+  border-radius: 0.9vmin;
+  margin: 3px 5px 3px 0;
+  }
+
+  .grid-item {
+    padding: 2px;
+    font-size: 13px;
+  }
+}  
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+.myAside{
+  margin-left: 1vh;
+  padding: 1vh 1vh;
+  top: 60px;
+  height:40vh;
+  width: 25vw;
+  }
+
+.item1 {
+  font-size: 22px;
+  font-weight: bold;
+  }  
+.item2 {
+  font-size: 13px;
+  }  
+
+.menu a{
+
+  font-size: 12px;
+  padding: .8vmin;
+  border-radius: 0.9vmin;
+  margin: 3px 5px 3px 0;
+
+  }
+
+  .grid-item {
+    padding: 3px;
+    font-size: 16px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ 
+.item1 {
+  font-size: 25px;
+  font-weight: bold;
+  }  
+.item2 {
+  font-size: 15px;
+  }  
+.menu a{
+  font-size: 1.6vmin;
+  padding: .8vmin;
+  border-radius: 0.9vmin;
+  margin: 6px 10px 6px 0;
+  }
+
+.grid-item {
+  padding: 3px;
+  font-size: 20px;
+  }
+}
+
